@@ -1,0 +1,108 @@
+/* Futuristic Dark Theme */
+body {
+  margin: 0;
+  font-family: "Orbitron", Arial, sans-serif;
+  background-color: #050505; /* Deep black background */
+  color: #e0f7fa; /* Soft blue text */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Container - max width for mobile look */
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Headers */
+h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00ffcc; /* Neon green headers */
+  margin-bottom: 12px;
+}
+
+/* Bet item design - futuristic glowing card */
+.bet-item {
+  background: rgba(10, 10, 10, 0.9);
+  border: 1px solid rgba(0, 255, 204, 0.5);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Inputs & buttons */
+input,
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+input {
+  background: #0d0d0d;
+  color: #00ffcc;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Glowing gradient button */
+button {
+  background: linear-gradient(145deg, #00ccff, #00ff99);
+  color: #050505;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(0, 255, 153, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 153, 1);
+}
+
+/* Bottom Navigation */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.95);
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(0, 255, 204, 0.5);
+  z-index: 100;
+}
+
+.navbar a {
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #00ff99;
+  text-shadow: 0 0 8px rgba(0, 255, 153, 0.8);
+}
+
+/* For spacing around content */
+.page-content {
+  padding-bottom: 80px; /* Leave space for navbar */
+}
